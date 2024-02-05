@@ -1,9 +1,10 @@
 import React from "react";
 
+// Image cards
 const Cards = ({img}) => {
     return(
         <>
-            <img className="card" src={img}/>
+            <img src={img} />
         </>
     )
 }
