@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import Nav from './Component/Nav'
-import Slider from './Component/Slider'
 import AllMovies from './Component/AllMovies'
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
   return (
     <>
       <Nav/>
-      <Slider/>
       <AllMovies/>
     </>
   )

@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Scroll bar color change */
+::-webkit-scrollbar {width: 6px; height: 4px; background: #ffffff; }
+::-webkit-scrollbar-thumb { background-color: #10aa8e; -webkit-border-radius: 1ex; }
+
 .form-control:focus {
     border-color: #c90c0c;
     box-shadow: 0 0 0 0.2rem rgba(237, 10, 10, 0.25);
@@ -13,7 +17,7 @@
     overflow-x: auto;
 }
 .moveListImages img{
-    width: 200px;
+    width: 150px;
     padding: 0px 10px 10px 10px;
 }
 h5{

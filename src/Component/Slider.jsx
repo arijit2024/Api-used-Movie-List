@@ -1,19 +1,22 @@
 import React from "react";
+const trendingMovies ="trending/all/day";
+const IMAGE_URL= "https://image.tmdb.org/t/p/w500";
 
-const Slider = () => {
+const Slider = (src) => {
+    console.log(src.src[0].poster_path)
     return(
         <>
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
-                    <img src="https://picsum.photos/id/1/200/300" className="d-block w-100" alt="..."/>
+                    {/* <div className="carousel-item active">
+                    <img src={`${IMAGE_URL}${src.src[0].poster_path}`} className="d-block w-100" alt="..."/>
+                    </div> */}
+                    {/* <div className="carousel-item">
+                    <img src={`${IMAGE_URL}${src.src[1].poster_path}`} className="d-block w-100" alt="..."/>
                     </div>
                     <div className="carousel-item">
-                    <img src="https://picsum.photos/id/1/200/300" className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item">
-                    <img src="https://picsum.photos/id/1/200/300" className="d-block w-100" alt="..."/>
-                    </div>
+                    <img src={`${IMAGE_URL}${src.src[2].poster_path}`} className="d-block w-100" alt="..."/>
+                    </div> */}
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
